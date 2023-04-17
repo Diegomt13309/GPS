@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        Mapa con Js
+    </title>
+    <style>
+        @import url("https://unpkg.com/leaflet@1.9.3/dist/leaflet.css");
+
+        #map {
+            margin: 0 auto;
+            width: 50%;
+            min-height: 400px;
+            max-height: 500px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    Hola Mundo con Mapa
+    <div id="map"></div>
+</body>
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
+    </script>
+<script>
+    var map = L.map('map').setView([9.9983, -84.117], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "gps",
+  "version": "1.0.0",
+  "description": "Proyecto con Leaflet y Ts",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx parcel ./index.html --open",
+    "build": "npx parcel build index.html --public-url '.'"
+  },
+  "keywords": [
+    "leaflet",
+    "Ts",
+    "maps",
+    "geojson"
+  ],
+  "author": "DiegoMT",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "1.9",
+    "typescript": "5.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.3",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "parcel-bundler": "^1.12.5"
+  }
+}
